@@ -21,9 +21,9 @@ public class PI005ma {
     k2 = l * Res + d * e0 * DR;
     k3 = d * e0;
     alpha = 0.8;
-		
-		for(int i = 0; i < 200; i++) {
-			this.feed(DR);
+	  
+    for(int i = 0; i < 200; i++) {
+      this.feed(DR);
 		}
 	}
   
