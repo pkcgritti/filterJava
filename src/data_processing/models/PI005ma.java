@@ -24,8 +24,8 @@ public class PI005ma {
 	  
     for(int i = 0; i < 200; i++) {
       this.feed(DR);
-		}
-	}
+    }
+  }
   
   public double feed(double value) {
     double yout = computeWindowMean( ywnd.feed(value) );
