@@ -17,9 +17,9 @@ public class PI005ma {
     ywnd = new Window(24);
     dwnd = new Window(24);
     Ybuff = new Window(2);
-		k1 = l * e0 * Res;
-		k2 = l * Res + d * e0 * DR;
-		k3 = d * e0;
+    k1 = l * e0 * Res;
+    k2 = l * Res + d * e0 * DR;
+    k3 = d * e0;
     alpha = 0.8;
 		
 		for(int i = 0; i < 200; i++) {
