@@ -20,7 +20,7 @@ public class PI003 {
 		f2 = new FIR("etc", "pi003_02.fc");
 		f2Buffer = new Window(2);
 		output = 0;
-		alpha = 0.94;
+		alpha = 0.5; // 0.94;
 		k1 = l * e0 * Res;
 		k2 = l * Res + d * e0 * DR;
 		k3 = d * e0;

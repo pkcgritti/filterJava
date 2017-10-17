@@ -1,4 +1,4 @@
-import data_processing.models.PI003;
+import data_processing.models.*;
 import java.util.List;
 
 import java.nio.file.FileSystems;
@@ -28,15 +28,17 @@ public class testFilter {
 	}
 	
 	static public void main(String[] args) {
-		double[] data = getData("data.txt"); // DeltaRAbsOhm
+		double[] data = getData("data005.txt"); // DeltaRAbsOhm
 		double[] filtered;                   // EF
 		
-		PI003 pi = new PI003(150.37, 2.25, 0.3, 1e-4, 0.00005158645695, 16);
+		// PI003 pi = new PI003(150.37, 2.25, 0.3, 1e-4, 0.00005158645695, 16);
+		// PI003 pi = new PI003(150.37, 2.25, 0.3, 1e-4, 0.00007177720702, 16);
+		PI005ma pi = new PI005ma(150.37, 2.25, 0.3, 1e-4, 0.00007177720702, 16);
 		
 		filtered = pi.filter(data);
 
 		try {
-			PrintWriter writer = new PrintWriter("output.txt", "UTF-8");
+			PrintWriter writer = new PrintWriter("etc/output.txt", "UTF-8");
 			for (double val : filtered) {
 				writer.println(val);
 			}
