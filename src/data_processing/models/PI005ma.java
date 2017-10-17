@@ -16,12 +16,12 @@ public class PI005ma {
 		// Criação de janelas para dados de entrada
 		// y (DeltaOhmAbs) e d (Taxa de variação)
 		ywnd = new Window(24);
-		dwnd = new Window(1);
+		dwnd = new Window(8);
 		Ybuff = new Window(2);
 		k1 = l * e0 * Res;
 		k2 = l * Res + d * e0 * DR;
 		k3 = d * e0;
-		alpha = 0;
+		alpha = 0.5;
 
 		for (int i = 0; i < 200; i++) {
 			this.feed(DR);
